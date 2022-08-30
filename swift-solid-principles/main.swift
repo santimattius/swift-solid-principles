@@ -35,11 +35,13 @@ draw2(vehicle: motorbike)
 
 print("liskov_substitution_principle")
 
+//without LSP
 let cat = Cat()
 jumpHole(animal: cat)
 
 let elephant = Elephant()
-jumpHole(animal: elephant) //TODO: error
+//jumpHole(animal: elephant) //TODO: error
 
+//with LSP
 let cat1 = Cat1()
 jumpHole1(animal: cat1)
