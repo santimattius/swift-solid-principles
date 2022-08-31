@@ -10,30 +10,40 @@ Let's begin with the single responsibility principle. As we might expect, this p
 
 
 
-```kotlin
-class Vehicle(
-    private val wheelCount: Int,
-    private val maxSpeed: Int
-) {
-    fun print() {
-        println("wheelCount: $wheelCount, maxSpeed:$maxSpeed")
+```swift
+struct Vehicle {
+    let wheelCount: Int
+    let maxSpeed: Int
+    
+    func show() {
+        print("""
+        wheelCount: \(wheelCount)
+        maxSpeed: \(maxSpeed)
+        """)
     }
 }
 ```
 
 Apply this principle
 
-```kotlin
+```swift
 
-data class Vehicle(
-    val wheelCount: Int,
-    val maxSpeed: Int
-)
+struct Vehicle {
+    let wheelCount: Int
+    let maxSpeed: Int
+    
+    func detail() -> String {
+      return  """
+        wheelCount: \(wheelCount)
+        maxSpeed: \(maxSpeed)
+        """
+    }
+}
 
-class VehiclePrinter {
-
-    fun print(vehicle: Vehicle) = with(vehicle) {
-        println("wheelCount: $wheelCount, maxSpeed:$maxSpeed")
+final class VehiclePrinter{
+    
+    func show(vh: Vehicle) {
+        print(vh.detail())
     }
 }
 
