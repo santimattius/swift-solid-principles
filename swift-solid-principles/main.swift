@@ -28,7 +28,7 @@ draw(vehicle: vh3)
 
 //with OCP
 let car = Car()
-draw2(vehicle: Car)
+draw2(vehicle: car)
 
 let motorbike = Motorbike()
 draw2(vehicle: motorbike)
@@ -45,3 +45,24 @@ let elephant = Elephant()
 //with LSP
 let cat1 = Cat1()
 jumpHole1(animal: cat1)
+
+print("interface_segregation_principle")
+
+//without ISP
+let auth1:AutenticationProvider = UserAndPassword()
+//auth1.launch2FA()//TODO: error
+
+//with ISP
+let auth2:AutenticationProvider1 = UserAndPassword1()
+//auth2.launch2FA() // method not exists
+let auth3 = AppleProvider1()
+let result = auth3.launch2FA()//run
+
+print("dependency_inversion_principle")
+
+//without DIP
+let machine = Windows98Machine()
+
+//with DIP
+let machine1 = Windows98Machine1(keyboard: StandardKeyboard1(), monitor: LedMonitor())
+let machine2 = Windows98Machine1(keyboard: MechanicalKeyboard(), monitor: LcdMonitor())
