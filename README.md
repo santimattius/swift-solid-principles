@@ -1,4 +1,4 @@
-# SOLID Principles in Kotlin
+# SOLID Principles in Swift
 SOLID Principles notes.
 
 <p align="center">
