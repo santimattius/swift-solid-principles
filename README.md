@@ -9,11 +9,11 @@ SOLID Principles notes.
 
 They are a set of principles applicable to Object Oriented Programming that, if used correctly, will help you write quality software in any object-oriented programming language. Thanks to them, you will create code that will be easier to read, test and maintain.
 
-- [Single Responsibility](https://github.com/santimattius/kotlin-solid-principles/tree/master/src/main/kotlin/single_responsiblity_principle)
-- [Open/Closed](https://github.com/santimattius/kotlin-solid-principles/tree/master/src/main/kotlin/open_closed_principle)
-- [Liskov Substitution](https://github.com/santimattius/kotlin-solid-principles/tree/master/src/main/kotlin/liskov_substitution)
-- [Interface Segregation](https://github.com/santimattius/kotlin-solid-principles/tree/master/src/main/kotlin/interface_segregation)
-- [Dependency Inversion](https://github.com/santimattius/kotlin-solid-principles/tree/master/src/main/kotlin/dependency_inversion)
+- [Single Responsibility](https://github.com/santimattius/swift-solid-principles/tree/main/swift-solid-principles/Single_Responsiblity)
+- [Open/Closed](https://github.com/santimattius/swift-solid-principles/tree/main/swift-solid-principles/Open_Closed)
+- [Liskov Substitution](https://github.com/santimattius/swift-solid-principles/tree/main/swift-solid-principles/Liskov_Substitution)
+- [Interface Segregation](https://github.com/santimattius/swift-solid-principles/tree/main/swift-solid-principles/Interface_Segregation)
+- [Dependency Inversion](https://github.com/santimattius/swift-solid-principles/tree/main/swift-solid-principles/Dependency_Inversion)
  
 
 ## References
